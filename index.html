@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Search Box</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f6f9;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 30px;
+      padding: 8px 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .search-box input[type="search"] {
+      border: none;
+      outline: none;
+      padding: 10px 14px;
+      border-radius: 30px;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    .search-box button {
+      background: #007BFF;
+      border: none;
+      outline: none;
+      padding: 10px 18px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .search-box button:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
 <body>
 
-  <h2>Search Box with Button</h2>
-  
-  <form>
-    <input type="search" placeholder="Type to search..." name="query">
-    <button type="submit">Search</button>
-  </form>
+  <div class="search-box">
+    <form>
+      <input type="search" placeholder="Search here..." name="query">
+      <button type="submit">Search</button>
+    </form>
+  </div>
 
 </body>
 </html>
+
